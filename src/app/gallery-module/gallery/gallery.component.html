@@ -1,0 +1,49 @@
+
+<!-- <div class="container">
+    <div class="col-sm-12">
+        <div class="col-sm-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary" (click)="searchImages()" type="button">Find Images !</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<p>App Works</p>
+
+<!--
+<p *ngIf="searching">Fetching data..</p>
+
+<div *ngFor="let image of images" class="image-container">
+    <img src="{{ image.snap }}"/>
+    <p>Tags: {{ image.id }}</p>
+    <p>Tags: {{ image.up_date }}</p>
+    <p>Commenets: {{ image.album_id }}</p>
+</div> -->
+
+  <!-- <p *ngIf="searching">Fetching data..</p> -->
+
+<div id="lightgallery" class="list-unstyled">
+  <div class="container">
+      <ul class="image-container col-sm-6 col-md-4 row">
+          <li *ngFor="let image of images" class="col-xs-6 col-sm-4 col-md-3" data-responsive=" 375,  480, 800" data-src="" data-sub-html="<h4>Rose</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                <a href="">
+                    <img class="img-responsive" src="{{ image.snap }}" alt="Thumb-1">
+                </a>
+          </li>
+      </ul>
+  </div>
+</div>
+
+      <!-- <ul id="lightgallery" class="list-unstyled row">
+        <li class="col-xs-6 col-sm-4 col-md-3" data-responsive=" 375,  480, 800" data-src="" data-sub-html="<h4>Rose</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+            <a href="">
+                <img class="img-responsive" src="{{url}}" alt="Thumb-1">
+            </a>
+        </li>
+      </ul> -->
+
+
