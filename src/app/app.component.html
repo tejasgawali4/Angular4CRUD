@@ -4,27 +4,4 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-  <!-- urlq = 'https://static.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg';
-  url = 'https://www.lonelyplanet.com/news/wp-content/uploads/2017/01/Talman-Madsen-Photography-Sunrise-and-Sunset-Challenge-images_Talman-Madsen-Photography-Sunrise-and-Sunset-Challenge-images-5-e1485452774916.jpg'; -->
-
-
-  <div class="demo-gallery">
-    <ul id="lightgallery" *ngFor="let image of images" class="list-unstyled row">
-        <li class="col-xs-6 col-sm-4 col-md-3" data-responsive=" 375,  480, 800" data-src="" data-sub-html="<h4>Rose</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
-            <a href="">
-                <img class="img-responsive" src="{{ image.snap }}" alt="Thumb-1">
-            </a>
-        </li>
-      </ul>
-  </div>
-
-  <!-- <div id="lightgallery" class="list-unstyled row">
-    <div *ngFor="let image of images" class="image-container col-sm-6 col-md-4">
-        <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="375,  480, 800" data-src="" data-sub-html="<h4>Rose</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
-              <a href="">
-                  <img class="img-responsive" src="{{ image.snap }}" alt="Thumb-1">
-              </a>
-        </li>
-    </div>
-</div> -->
-
+<router-outlet></router-outlet>

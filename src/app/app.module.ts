@@ -18,7 +18,7 @@ import { GalleryserviceService } from './gallery-module/shared/galleryservice.se
     BrowserModule,
     HttpModule,
     RouterModule.forRoot([
-      // {path: '', redirectTo: 'gallery', pathMatch: 'full'},
+      {path: '', redirectTo: 'gallery', pathMatch: 'full'},
       { path : 'gallery', component : GalleryComponent },
       { path : 'home', component : GalleryComponent }
     ])
