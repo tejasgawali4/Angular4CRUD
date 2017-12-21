@@ -1,17 +1,3 @@
-
-<!-- <div class="container">
-    <div class="col-sm-12">
-        <div class="col-sm-6">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                    <button class="btn btn-secondary" (click)="searchImages()" type="button">Find Images !</button>
-                </span>
-            </div>
-        </div>
-    </div>
-</div> -->
-
 <p>App Works</p>
 
 <!--
@@ -24,26 +10,60 @@
     <p>Commenets: {{ image.album_id }}</p>
 </div> -->
 
-  <!-- <p *ngIf="searching">Fetching data..</p> -->
+<!-- <p *ngIf="searching">Fetching data..</p> -->
 
-<div id="lightgallery" class="list-unstyled">
-  <div class="container">
-      <ul class="image-container col-sm-6 col-md-4 row">
-          <li *ngFor="let image of images" class="col-xs-6 col-sm-4 col-md-3" data-responsive=" 375,  480, 800" data-src="" data-sub-html="<h4>Rose</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+<!-- <div id="lightgallery" class="list-unstyled">
+    <ul class="image-container col-sm-6 col-md-4 row">
+        <li *ngFor="let image of images" class="col-xs-6 col-sm-4 col-md-3" data-responsive=" 375,  480, 800" data-src="http://www.polycom.com/content/dam/polycom/www/images/500x300/vid-conf-basics-com-500x300-enus.png"
+            data-sub-html="<h4>Rose</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+            <a href="">
+                    <img class="img-responsive" src="http://www.polycom.com/content/dam/polycom/www/images/500x300/vid-conf-basics-com-500x300-enus.png" alt="Image is here">
+            </a>
+        </li>
+    </ul>
+</div> -->
+
+<div class="demo-gallery">
+    <ul id="lightgallery" class="list-unstyled row">
+        <li class="col-xs-6 col-sm-4 col-md-3"  data-responsive=" 375,  480, 800"
+        data-src="https://static.pexels.com/photos/111755/pexels-photo-111755.jpeg"
+            data-sub-html="<h4>Rose</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+            <a href="">
+                <img class="img-responsive" src="https://static.pexels.com/photos/111755/pexels-photo-111755.jpeg" alt="Thumb-1">
+            </a>
+        </li>
+        <li class="col-xs-6 col-sm-4 col-md-3"  data-responsive=" 375,  480, 800"
+        data-src="https://static.pexels.com/photos/34950/pexels-photo.jpg"
+            data-sub-html="<h4>Rose</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+            <a href="">
+                <img class="img-responsive" src="https://static.pexels.com/photos/34950/pexels-photo.jpg" alt="Thumb-1">
+            </a>
+        </li>
+        <li class="col-xs-6 col-sm-4 col-md-3"  data-responsive=" 375,  480, 800"
+        data-src="https://cdn.pixabay.com/photo/2016/03/28/12/35/cat-1285634_960_720.png"
+            data-sub-html="<h4>Rose</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+            <a href="">
+                <img class="img-responsive" src="https://cdn.pixabay.com/photo/2016/03/28/12/35/cat-1285634_960_720.png" alt="Thumb-1">
+            </a>
+        </li>
+        <li class="col-xs-6 col-sm-4 col-md-3"  data-responsive=" 375,  480, 800"
+        data-src="https://cdn.pixabay.com/photo/2016/10/27/22/53/heart-1776746_960_720.jpg"
+            data-sub-html="<h4>Rose</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+            <a href="">
+                <img class="img-responsive" src="https://cdn.pixabay.com/photo/2016/10/27/22/53/heart-1776746_960_720.jpg" alt="Thumb-1">
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="demo-gallery">
+      <ul id="lightgallery" class="list-unstyled row">
+            <li class="col-xs-6 col-sm-4 col-md-3" *ngFor="let image of images"  data-responsive=" 375,  480, 800"
+            data-src="http://www.thewildbeat.com/wp-content/uploads/2012/11/Storm-Rays-750-500x300.jpg"
+                data-sub-html="<h4>Rose</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
                 <a href="">
                     <img class="img-responsive" src="{{ image.snap }}" alt="Thumb-1">
                 </a>
-          </li>
+            </li>
       </ul>
-  </div>
 </div>
-
-      <!-- <ul id="lightgallery" class="list-unstyled row">
-        <li class="col-xs-6 col-sm-4 col-md-3" data-responsive=" 375,  480, 800" data-src="" data-sub-html="<h4>Rose</h4>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
-            <a href="">
-                <img class="img-responsive" src="{{url}}" alt="Thumb-1">
-            </a>
-        </li>
-      </ul> -->
-
-

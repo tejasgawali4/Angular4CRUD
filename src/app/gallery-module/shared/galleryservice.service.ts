@@ -27,10 +27,10 @@ export class GalleryserviceService
   constructor(public http: Http)
   // tslint:disable-next-line:one-line
   {
-    console.log('Data service connected...');
-    this.headers = new Headers({ 'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': '*'});
-    this.options = new RequestOptions({ headers: this.headers });
+      console.log('Data service connected...');
+      this.headers = new Headers({ 'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*'});
+      this.options = new RequestOptions({ headers: this.headers });
   }
 
   createService(): Observable<any> {

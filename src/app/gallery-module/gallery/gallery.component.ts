@@ -16,7 +16,10 @@ export class GalleryComponent implements OnInit {
     constructor(private galleryserviceService: GalleryserviceService)
     // tslint:disable-next-line:one-line
     {
-
+        this.galleryserviceService.createService().subscribe(
+        data => this.handleSuccess(data),
+        error => this.handleError(error),
+        () => this.searching = false);
     }
 
     handleSuccess(data)
@@ -37,11 +40,6 @@ export class GalleryComponent implements OnInit {
     // tslint:disable-next-line:one-line
     {
       console.log('ngOnInit cj');
-
-      this.galleryserviceService.createService().subscribe(
-        data => this.handleSuccess(data),
-        error => this.handleError(error),
-        () => this.searching = false);
     }
 
 }
