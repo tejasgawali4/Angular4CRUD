@@ -26,4 +26,5 @@ import { GalleryserviceService } from './gallery-module/shared/galleryservice.se
   providers: [GalleryserviceService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

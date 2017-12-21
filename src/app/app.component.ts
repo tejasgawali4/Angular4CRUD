@@ -7,7 +7,9 @@ import { Component , OnInit} from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'Prisms Communications';
 
+export class AppComponent
+// tslint:disable-next-line:one-line
+{
+  title = 'Prisms Communications';
 }
