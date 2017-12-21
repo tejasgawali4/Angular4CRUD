@@ -1,3 +1,7 @@
+1) as we are calling API it requires CORS please download plugin and turn on service
+2) then run the aplication
+
+
 # TopSchool
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
