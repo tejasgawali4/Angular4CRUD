@@ -22,12 +22,11 @@ export class GalleryserviceService
 {
     headers: Headers;
     options: RequestOptions;
-    private API_URL: string;
+    private API_URL = 'http://topschooldev.prisms.in/rest/index.php/staff_list.json';
 
   constructor(public http: Http)
   // tslint:disable-next-line:one-line
   {
-      this.API_URL = environment.prismsTopschol;
       console.log('Data service connected...');
       this.headers = new Headers({ 'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*'});
