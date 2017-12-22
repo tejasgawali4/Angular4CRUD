@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { GalleryComponent } from './gallery-module/gallery/gallery.component';
 import { GalleryserviceService } from './gallery-module/shared/galleryservice.service';
-
+import { NgxGalleryModule } from 'ngx-gallery';
 
 @NgModule({
   declarations: [
@@ -17,6 +17,7 @@ import { GalleryserviceService } from './gallery-module/shared/galleryservice.se
   imports: [
     BrowserModule,
     HttpModule,
+    NgxGalleryModule,
     RouterModule.forRoot([
       {path: '', redirectTo: 'gallery', pathMatch: 'full'},
       { path : 'gallery', component : GalleryComponent },

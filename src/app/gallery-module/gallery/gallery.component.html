@@ -23,7 +23,7 @@
     </ul>
 </div> -->
 
-<div class="demo-gallery">
+<!--<div class="demo-gallery">
     <ul id="lightgallery" class="list-unstyled row">
         <li class="col-xs-6 col-sm-4 col-md-3"  data-responsive=" 375,  480, 800"
         data-src="https://static.pexels.com/photos/111755/pexels-photo-111755.jpeg"
@@ -54,9 +54,13 @@
             </a>
         </li>
     </ul>
+</div>-->
+<div ng-if="imagesReady">
+        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
 </div>
 
-<div class="demo-gallery">
+
+<!--<div class="demo-gallery">
       <ul id="lightgallery" class="list-unstyled row">
             <li class="col-xs-6 col-sm-4 col-md-3" *ngFor="let image of images"  data-responsive=" 375,  480, 800"
             data-src="http://www.thewildbeat.com/wp-content/uploads/2012/11/Storm-Rays-750-500x300.jpg"
@@ -67,3 +71,5 @@
             </li>
       </ul>
 </div>
+-->
+
