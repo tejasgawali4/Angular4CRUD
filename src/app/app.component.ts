@@ -11,5 +11,5 @@ import { Component , OnInit} from '@angular/core';
 export class AppComponent
 // tslint:disable-next-line:one-line
 {
-  title = 'Prisms Communications';
+  title = 'Gallery';
 }

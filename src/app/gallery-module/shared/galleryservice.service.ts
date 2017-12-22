@@ -22,11 +22,12 @@ export class GalleryserviceService
 {
     headers: Headers;
     options: RequestOptions;
-    private API_URL: string = environment.prismsTopschol;
+    private API_URL: string;
 
   constructor(public http: Http)
   // tslint:disable-next-line:one-line
   {
+      this.API_URL = environment.prismsTopschol;
       console.log('Data service connected...');
       this.headers = new Headers({ 'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*'});
@@ -40,8 +41,7 @@ export class GalleryserviceService
            sid: 258
        };
 
-    return this.http
-        .post(this.API_URL, body, this.options)
+    return this.http.post(this.API_URL, body, this.options)
         .map(res => res.json())
         .catch(this.handleError);
     }
