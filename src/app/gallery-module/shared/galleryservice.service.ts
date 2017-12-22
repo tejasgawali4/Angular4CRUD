@@ -1,4 +1,3 @@
-import { result } from './../gallery/result';
 import { Http, Headers, Response, RequestOptions} from '@angular/http';
 import { environment } from '../../../environments/environment';
 import { Injectable } from '@angular/core';
@@ -22,7 +21,8 @@ export class GalleryserviceService
 {
     headers: Headers;
     options: RequestOptions;
-    private API_URL = 'http://topschooldev.prisms.in/rest/index.php/staff_list.json';
+
+    public API_URL = 'http://topschooldev.prisms.in/rest/index.php/staff_list.json';
 
   constructor(public http: Http)
   // tslint:disable-next-line:one-line
