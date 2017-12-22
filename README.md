@@ -2,6 +2,9 @@
 2) then run the aplication
 
 
+DEMO link https://tejasgawali4.github.io/Angular4CRUD/gallery
+
+
 # TopSchool
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
