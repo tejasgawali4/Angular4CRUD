@@ -21,6 +21,7 @@ export class GalleryserviceService
 {
     headers: Headers;
     options: RequestOptions;
+
     public API_URL = 'http://topschooldev.prisms.in/rest/index.php/staff_list.json';
 
   constructor(public http: Http)
@@ -39,8 +40,7 @@ export class GalleryserviceService
            sid: 258
        };
 
-    return this.http
-        .post(this.API_URL, body, this.options)
+    return this.http.post(this.API_URL, body, this.options)
         .map(res => res.json())
         .catch(this.handleError);
     }
